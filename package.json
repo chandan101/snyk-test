@@ -1,5 +1,5 @@
 {
-  "name": "fsElite",
+  "name": "snyk",
   "version": "0.0.1",
   "author": "Ionic Framework",
   "homepage": "http://ionicframework.com/",
@@ -13,7 +13,7 @@
     "custom:script": "node ./custom-script/app-config.js",
     "fselite:platformscript": "app=${app:-android} npm run custom:script",
     "fselite:ios": "npm run removeplatform:ios && app=ios npm run fselite:platformscript && npm run addplatform:ios && npm run generate:icons && npm run ios:build",
-    "fselite:android": "npm run removeplatform:android && app=android npm run fselite:platformscript && npm run addplatform:android && npm run generate:icons",
+    "fselite:android": "npm run removeplatform:android && app=android npm run snyk:platformscript && npm run addplatform:android && npm run generate:icons",
     "removeplatform:ios": "ionic cordova platform rm ios",
     "removeplatform:android": "ionic cordova platform rm android",
     "addplatform:ios": "ionic cordova platform add ios@5.1.1",
